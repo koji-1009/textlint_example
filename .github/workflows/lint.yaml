@@ -21,6 +21,6 @@ jobs:
         with:
           bun-version: latest
       - run: bun install
-      - run: bun danger ci
+      - run: bun danger ci -d textlint.ts
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
